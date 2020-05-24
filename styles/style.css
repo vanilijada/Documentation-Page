@@ -1,0 +1,55 @@
+main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.main-section{
+    grid-column: 2;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+code{
+    background-color: lightgray;
+    margin-left: 30px;
+    padding: 5px;
+    display: block;
+    text-align: left;
+}
+
+li{
+    margin-top: 35px;
+}
+
+#nav-bar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border-bottom: black;
+    border: solid;
+    border-radius: 5%;
+    padding: 7px 7px 7px 7px;
+}
+
+#intro{
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 800px){
+    main{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #nav-bar{
+        position: relative;
+    }
+   
+}
